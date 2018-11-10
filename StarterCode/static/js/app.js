@@ -18,8 +18,8 @@ submit.on("click", function() {
     var inputDate = d3.select("#datetime");
     var inputValue = inputDate.property("value");
     var filteredData = tableData.filter(ufoReport => ufoReport.datetime === inputValue);
-    console.log(filteredData)
-    tbody.html("")
+    console.log(filteredData);
+    tbody.html("");
     if(filteredData.length !== 0){
       filteredData.forEach((filteredUfoReport) => {
         var row = tbody.append("tr");
